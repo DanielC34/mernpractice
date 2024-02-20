@@ -1,33 +1,19 @@
 {
-<<<<<<< HEAD
   "name": "convocafe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "nodemon backend/server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.4.4",
-    "express": "^4.18.2"
-=======
-  "name": "node-auth",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "author": "Daniel Chanda",
   "license": "ISC",
   "dependencies": {
-    "@fastify/static": "^7.0.1",
     "dotenv": "^16.4.4",
-    "fastify": "^4.26.1",
-    "fastify-static": "^4.7.0"
->>>>>>> 72732606bce84651f4f8dd2d3eb65a349ee83a2e
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
