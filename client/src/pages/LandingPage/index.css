@@ -41,7 +41,6 @@ button {
   margin-bottom: 10px;
 }
 
-
 button:active {
   transform: translateY(-1px);
 }
