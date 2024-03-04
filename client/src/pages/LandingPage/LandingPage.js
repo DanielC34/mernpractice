@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./LandingPage.css";
 import Coffee from "../../components/img/coffee1.png"; // Adjust the path based on the file's location
 
 const LandingPage = () => {
