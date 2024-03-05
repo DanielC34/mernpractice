@@ -8,13 +8,7 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleSignup = (e) => {
-    e.preventDefault();
-    console.log(
-      "Email: ", email,
-      "Username: ", username,
-      "Password: ", password,
-      "Confirm password: ", confirmPassword
-    );
+    //Logic to handle Signup form
   };
 
   return (
