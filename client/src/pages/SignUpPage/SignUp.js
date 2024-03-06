@@ -1,60 +1,55 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import "./SignUp.css";
 
 const Signup = () => {
-
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [username, setUsername] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleSignup = (e) => {
-    //Logic to handle Signup form
+    // Logic to handle Signup form
   };
 
   return (
-    <div className="signup-page">
-      <h2>Sign Up</h2>
-      <form>
-        <div>
+    <div className="form-box">
+      <form className="form" onSubmit={handleSignup}>
+        <span className="title">Sign up</span>
+        <span className="subtitle">Create a free account with your email.</span>
+        <div className="form-container">
+          <input
+            type="text"
+            value={setUsername}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder="Username"
+            className="input"
+            required
+          />
           <input
             type="email"
             value={email}
-            placeholder="Email address"
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            className="input"
             required
           />
-        </div>
-        <div>
           <input
-            type="text"
-            value={username}
-            placeholder="Username"
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="text"
+            type="password"
             value={password}
-            placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            className="input"
             required
           />
         </div>
-        <div>
-          <input
-            type="text"
-            value={confirmPassword}
-            placeholder="Confirm Password"
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit">Sign up</button>
       </form>
+      <div className="form-section">
+        <p>
+          Have an account? <a href="">Log in</a>{" "}
+        </p>
+      </div>
     </div>
   );
-}
+};
 
-export default Signup
+export default Signup;
