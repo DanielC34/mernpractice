@@ -5,6 +5,7 @@ const Signup = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleSignup = (e) => {
     // Logic to handle Signup form
@@ -18,7 +19,7 @@ const Signup = () => {
         <div className="form-container">
           <input
             type="text"
-            value={setUsername}
+            value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Username"
             className="input"
@@ -37,6 +38,14 @@ const Signup = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
+            className="input"
+            required
+          />
+          <input
+            type="password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            placeholder="Confirm Password"
             className="input"
             required
           />
