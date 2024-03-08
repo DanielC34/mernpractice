@@ -50,11 +50,11 @@ const Signup = () => {
             required
           />
         </div>
-        <button type="submit">Sign up</button>
+        <button type="submit" className="signup-button">Sign up</button>
       </form>
       <div className="form-section">
         <p>
-          Have an account? <a href="">Log in</a>{" "}
+          Have an account? <a href="/login">Log in</a>{" "}
         </p>
       </div>
     </div>
