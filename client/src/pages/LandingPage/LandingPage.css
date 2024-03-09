@@ -20,7 +20,6 @@ body {
 
 .landing-page-heading {
   font-size: 24px; /* Adjust the font size as needed */
-  /* Add any additional styles for the heading */
   text-align: center; /* Center the text horizontally */
 }
 
@@ -47,10 +46,10 @@ button:active {
 
 .signup-button:hover {
   background-color: #ff6347; 
-  color: #fff; /* Text color for Button 1 hover */
+  color: #fff; 
 }
 
 .login-button:hover {
-  background-color: #000;
-  color: #fff; /* Text color for Button 2 hover */
+  background-color: #000000;
+  color: #fff; 
 }
