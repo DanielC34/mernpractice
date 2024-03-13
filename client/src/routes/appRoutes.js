@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LandingPage from '../pages/LandingPage/LandingPage'
-import LogInPage from "../pages/LoginPage/LogInPage";
+import LogInPage from "../pages/LoginPage/LogInPage.js";
 import Signup from '../pages/SignUpPage/SignUp'
 import ChatPage from '../pages/ChatPage/ChatPage'
 
