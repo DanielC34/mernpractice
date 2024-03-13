@@ -1,13 +1,11 @@
-import './App.css';
-import LandingPage from './pages/LandingPage/LandingPage'
-import Login from "./pages/LogInPage/Login";
-import Signup from "./pages/SignUpPage/SignUp";
+import React from 'react';
+import AppRoutes from './routes/appRoutes';
 
 
 function App() {
   return (
       <div className="App">
-          <Login/>
+          <AppRoutes />
       </div>
   );
 }
