@@ -1,4 +1,4 @@
-/* LandingPage.css */
+
 body {
   display: flex;
   flex-direction: column;
@@ -13,14 +13,14 @@ body {
 }
 
 .logo-image {
-  width: 150px; /* Adjust the width as needed */
-  margin-bottom: 20px; /* Add space between image and heading */
-  align-self: center; /* Center the image horizontally */
+  width: 150px; 
+  margin-bottom: 20px; 
+  align-self: center; 
 }
 
 .landing-page-heading {
-  font-size: 24px; /* Adjust the font size as needed */
-  text-align: center; /* Center the text horizontally */
+  font-size: 24px; 
+  text-align: center; 
 }
 
 button {
