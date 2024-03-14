@@ -1,5 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
+import { Link } from "react-router-dom";
 import Coffee from "../../components/img/coffee1.png"; 
 
 const LandingPage = () => {
@@ -8,12 +9,16 @@ const LandingPage = () => {
       <img src={Coffee} alt="Coffee" className="logo-image" />
       <h1 className="landing-page-heading">ConvoCafe</h1>
       <h3>Offline Chatting Platform</h3>
-        <div>
+      <div>
+        <Link to="/signup">
           <button className="signup-button">Sign Up</button>
-        </div>
-        <div>
+        </Link>
+      </div>
+      <div>
+        <Link to="/login">
           <button className="login-button">Log In</button>
-        </div>
+        </Link>
+      </div>
     </div>
   );
 };
