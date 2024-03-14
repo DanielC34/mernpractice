@@ -8,7 +8,14 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
    const handleLogin = (e) => {
-     // Logic to handle Login form
+     e.preventDefault(); // Prevent the default form submission behavior
+
+     // Add your login logic here, e.g., make an API call to authenticate the user
+     console.log("Logging in with email:", email, "and password:", password);
+
+     // Clear the form fields after submission
+     setEmail("");
+     setPassword("");
    };
 
   return (
