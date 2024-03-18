@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
-const User = require("../models/chatModel");
+const User = require("../models/userModel");
 
 //Route for handling Sign up requests
 router.post("/signup", async (req, res) => {
