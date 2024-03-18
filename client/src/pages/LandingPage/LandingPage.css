@@ -1,4 +1,3 @@
-
 body {
   display: flex;
   flex-direction: column;
@@ -8,9 +7,11 @@ body {
   background-color: beige;
 }
 
-.landing-page-heading {
-    text-align: center
+.landing-page-container {
+  text-align: center;
+  margin-top: 50px;
 }
+
 
 .logo-image {
   width: 150px; 
@@ -19,29 +20,25 @@ body {
 }
 
 .landing-page-heading {
-  font-size: 24px; 
-  text-align: center; 
+  font-size: 2rem; 
+  margin-top: 20px;
+  text-align: left; 
 }
 
-button {
-  padding: 1.3em 3em;
-  font-size: 12px;
+.signup-button {
+  padding: 10px 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
+  font-weight: 600;
+  color: #fdfdfd;
+  background-color: #ff0000; 
   border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 1); 
+  border-radius: 24px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
   margin-bottom: 10px;
-}
-
-button:active {
-  transform: translateY(-1px);
 }
 
 .signup-button:hover {
@@ -49,7 +46,23 @@ button:active {
   color: #fff; 
 }
 
-.login-button:hover {
+.login-button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: #000;
   background-color: #000000;
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.login-button:hover {
+  background-color: #333333; /* Darker black on hover */
   color: #fff; 
 }

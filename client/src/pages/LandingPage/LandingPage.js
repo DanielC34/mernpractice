@@ -11,12 +11,20 @@ const LandingPage = () => {
       <h3>Offline Chatting Platform</h3>
       <div>
         <Link to="/signup">
-          <button className="signup-button">Sign Up</button>
+          <button className="signup-button">
+            <span className="transition"></span>
+            <span className="gradient"></span>
+            <span className="label">Sign Up</span>
+          </button>
         </Link>
       </div>
       <div>
         <Link to="/login">
-          <button className="login-button">Log In</button>
+          <button className="login-button">
+            <span className="transition"></span>
+            <span className="gradient"></span>
+            <span className="label">Log In</span>
+          </button>
         </Link>
       </div>
     </div>
