@@ -1,3 +1,6 @@
+//chatModel defines the structure of the chat info in the database
+//
+
 const mongoose = require('mongoose');
 
 //Define schema for a chat
@@ -12,6 +15,8 @@ const chatSchema = new mongoose.Schema(
   { timestamps: true } // Automatically adds createdAt and updatedAt fields
 );
 
+//Create a Chat model based on the schema
 const Chat = mongoose.models("Chat", chatSchema);
 
+//Export Chat model created
 module.exports = Chat;
