@@ -14,6 +14,7 @@ const userSchema = mongoose.Schema({
         default:
             "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg",
     },
+    isAdmin : { type: Boolean, default:false},
 },
     { timestamps: true } // Automatically adds createdAt and updatedAt fields
 );
