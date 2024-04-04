@@ -6,7 +6,7 @@ const registerUser = asyncHandler(async(req, res) => {
     const { name, email, password, profilePicture } = req.body;
 
     //Checks if any of the fields is empty and returns error if true
-    if (!name || !email || !password || profilePicture) {
+    if (!name || !email || !password) {
         res.status(400);
         throw new Error("Please fill in all fields");
     }
@@ -48,14 +48,18 @@ const authUser = asyncHandler(async(req, res) => {
 
     const user = await User.findOne({ email });
 
-    if (user) {
+    if (user && (await user.passwordMatch(password))) {
         res.status(201).json({
-            _id: user._id,
-            name: user.name,
-            email: user.email,
-            profilePicture: user.profilePicture,
-        })
+          _id: user._id,
+          name: user.name,
+          email: user.email,
+          profilePicture: user.profilePicture,
+          token: generateToken(user._id),
+        });
+    } else {
+        res.status(400);
+        throw new Error("Failed to create user");
     }
 })
 
-module.exports = { registerUser }
+module.exports = { registerUser, authUser }
