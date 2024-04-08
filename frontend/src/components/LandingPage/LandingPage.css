@@ -1,0 +1,19 @@
+.landing-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.landing-page-content {
+    text-align: center;
+}
+
+.buttons-container {
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
