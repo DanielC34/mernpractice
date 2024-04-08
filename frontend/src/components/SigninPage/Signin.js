@@ -76,7 +76,7 @@ export function Signin() {
   ) : (
     <div className="form-container">
       <div className="form-box">
-        <h2>Signin</h2>
+        <h2>Login</h2>
         {loadingMessage()}
         {errorMessage()}
         <div className="form-group">
